@@ -1,0 +1,16 @@
+{
+  "name": "one-variants",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Figma plugin for merging duplicate component variants by rebinding instances to one canonical variant.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run typecheck && npm run build && node scripts/check-dist.mjs"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.127.0",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  }
+}
